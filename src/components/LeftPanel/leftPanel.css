@@ -1,0 +1,167 @@
+.upper-left-panel {
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-name-input {
+  width: 40vh;
+  height: 5vh;
+  margin: 2vh;
+  color: white;
+  background-color: #080b15;
+  border: .1vh solid #37383d;
+  outline: none;
+  padding-left: 2%;
+  border-radius: 2vh;
+  -webkit-border-radius: 2vh;
+  -moz-border-radius: 2vh;
+  -ms-border-radius: 2vh;
+  -o-border-radius: 2vh;
+}
+
+.add-name-input::placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.add-panel .buttons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.add-panel .buttons button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  width: 2vh;
+  height: 2vh;
+  border: 0.25vh solid white;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: #2bfd03;
+}
+
+.option-type {
+  width: 15vh;
+  height: 5vh;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #080b15;
+  border-style: solid;
+  border-width: 0.1vh;
+  border-color: #37383d;
+  outline: none;
+  padding-left: 2%;
+  border-radius: 2vh;
+  appearance: none;
+}
+
+.left-list {
+  margin-top: 5%;
+  height: 75%;
+  overflow-y: scroll;
+}
+
+.list-element-left {
+  margin-bottom: 20px;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 15% 15% auto 15%;
+}
+
+.btnInc,
+.btnDec,
+.btnInside,
+.btnOutdoor,
+.btnCall,
+.btnUp,
+.btnDown,
+.btnEqual {
+  width: 24%;
+  height: 30px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 0.5px solid white;
+  border-radius: 10%;
+}
+
+.element-option .btnInc {
+  float: left;
+}
+
+.element-option .btnDec {
+  float: right;
+}
+
+.element-option .temperature {
+  font-size: x-large;
+  font-family: "Orbitron";
+}
+
+.add-element-right-panel button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.selected-option {
+  background-color: #435f6d;
+}
+
+/* 600x1024 ÇÖZÜNÜRLÜĞÜ */
+
+@media only screen and (max-width: 601px) {
+
+  .upper-left-panel {
+    height: 15%;
+  }
+
+  .add-name-input  {
+    width: 20vh;
+    height: 4vh;
+}
+
+  .option-type {
+    height: 4vh;
+  }
+
+  .left-list {
+    margin-top: 5%;
+    max-height: 80%;
+    min-height: 0;
+    overflow-y: scroll;
+  }
+  
+  .list-element-left {
+    height: 10%;
+  }
+
+}

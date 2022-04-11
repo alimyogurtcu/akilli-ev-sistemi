@@ -1,0 +1,151 @@
+/* 1024x600 ÇÖZÜNÜRLÜĞÜ */
+
+* {
+  color: white;
+}
+
+body {
+  background: linear-gradient(
+    to top right,
+    #2999a5,
+    #215183,
+    #1b325a,
+    #7d435f,
+    #a66f4f
+  );
+}
+.app {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  height: 98.25vh;
+}
+
+.left-panel {
+  width: 49.25%;
+  float: left;
+  margin-left: 0.5%;
+  height: 100%;
+  position: relative;
+}
+
+.right-panel {
+  width: 49.25%;
+  float: right;
+  margin-right: 0.5%;
+  height: 100%;
+  position: relative;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* ORTAK SINIFLAR */
+
+.element-name {
+  text-align: center;
+  margin: auto;
+  overflow-y: scroll;
+  height: 95%;
+}
+
+.element-type {
+  text-align: center;
+  margin: auto;
+}
+
+.element-option {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.btnInc,
+.btnDec,
+.btnInside,
+.btnOutdoor,
+.btnCall,
+.btnUp,
+.btnDown,
+.btnEqual {
+  width: 24%;
+  height: 30px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 0.5px solid white;
+  border-radius: 10%;
+}
+
+.btnToggle {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btnInside,
+.btnEqual,
+.btnUp {
+  margin-right: 2%;
+}
+
+.fa-toggle-on path {
+  color: lime;
+}
+
+.errorMsg {
+  color: tomato;
+  position: absolute;
+  margin-left: 5%;
+}
+
+.page-button {
+  visibility: hidden;
+  display: none;
+}
+
+hr {
+  display: none;
+  visibility: hidden;
+}
+
+/* -------------- */
+
+/* 600x1024 ÇÖZÜNÜRLÜĞÜ */
+
+@media only screen and (max-width: 601px) {
+  .left-panel {
+    width: 99%;
+  }
+
+  .right-panel {
+    margin-top: 5%;
+    width: 99%;
+  }
+
+  hr {
+    display: block;
+    visibility: visible;
+    border: 1px solid rgba(0, 0, 0, 0.5);;
+    width: 80%;
+  }
+  
+  .page-button {
+    text-decoration: none;
+    text-align: center;
+    background-color:#2999a5;
+    height: 2%;
+    width: 20%;
+    outline: none;
+    border: none;
+    display: block;
+    bottom: 3%;
+    left: 5%;
+    position: fixed;
+    visibility: visible;
+  }
+  .down {
+    left: 30%;
+  }
+}

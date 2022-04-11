@@ -1,0 +1,102 @@
+.right-list {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.delay-time {
+  height: 7%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-bottom: 2%;
+}
+
+.delay-time-text {
+  text-align: center;
+  margin: auto;
+}
+
+.delay-time button {
+  height: 80%;
+  margin-top: 5%;
+  width: 10vh;
+  background-color: white;
+  outline: none;
+  border: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10%;
+}
+
+.list-element-right {
+  margin-bottom: 20px;
+  height: 11.7%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 15% 15% 15% auto;
+}
+
+.right-buttons {
+  display: grid;
+  column-gap: 1%;
+  grid-template-columns: auto auto auto;
+}
+
+.right-buttons button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.selected-option-right-panel {
+  width: 100%;
+  background-color: #435f6d;
+}
+
+.width100 {
+    width: 100%;
+}
+
+/* 600x1024 ÇÖZÜNÜRLÜĞÜ */
+
+@media only screen and (max-width: 601px) {
+  .right-list {
+    height: 82%;
+    overflow-y: scroll;
+  }
+  
+  .delay-time {
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-bottom: 2%;
+  }
+  
+  .delay-time-text {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .delay-time button {
+    height: 80%;
+    width: 5vh;
+  }
+  
+  .list-element-right {
+    height: 6.5%;
+    grid-template-columns: 15% 15% 15% auto;
+  }
+
+  .right-buttons button {
+    height: 100%;
+    width: 100%;
+  }
+  
+}
